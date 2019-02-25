@@ -36,22 +36,8 @@ pkgver() {
 prepare() {
 	local file
 	cd "${_pkgname}"
-	sed \
-		-e '/char font/s/= .*/= "Fixed:pixelsize=13:style=SemiCondensed";/' \
-		-e '/char worddelimiters/s/= .*/= " '"'"'`\\\"()[]{}<>|";/' \
-		-e '/int defaultcs/s/= .*/= 1;/' \
-		-i config.def.h
-	sed \
-		-e 's/CPPFLAGS =/CPPFLAGS +=/g' \
-		-e 's/CFLAGS =/CFLAGS +=/g' \
-		-e 's/LDFLAGS =/LDFLAGS +=/g' \
-		-e 's/_BSD_SOURCE/_DEFAULT_SOURCE/' \
-		-i config.mk
-	sed '/@tic/d' -i Makefile
 	for file in "${source[@]}"; do
 		if [[ "$file" == "config.h" ]]; then
-			# add config.h if present in source array
-			# Note: this supersedes the above sed to config.def.h
 			cp "$srcdir/$file" .
 		elif [[ "$file" == *.diff || "$file" == *.patch ]]; then
 			# add all patches present in source array
