@@ -1,0 +1,39 @@
+From 0fbc967ed26a2a17d4fd7cd0b4c49bc7304bf276 Mon Sep 17 00:00:00 2001
+From: Jonathan Waldrep <waldrep@vt.edu>
+Date: Fri, 22 Feb 2019 15:11:43 -0500
+Subject: [PATCH 8/8] set tabspaces to 4
+
+---
+ config.def.h | 2 +-
+ st.info      | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/config.def.h b/config.def.h
+index ae05b77..c93a238 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -80,7 +80,7 @@ char *termname = "st-256color";
+  *
+  *	stty tabs
+  */
+-unsigned int tabspaces = 8;
++unsigned int tabspaces = 4;
+ 
+ /* Terminal colors (16 first used in escape sequence) */
+ static const char *colorname[] = {
+diff --git a/st.info b/st.info
+index 52fc617..0c146a3 100644
+--- a/st.info
++++ b/st.info
+@@ -47,7 +47,7 @@ st| simpleterm,
+ 	indn=\E[%p1%dS,
+ 	invis=\E[8m,
+ 	is2=\E[4l\E>\E[?1034l,
+-	it#8,
++	it#4,
+ 	kel=\E[1;2F,
+ 	ked=\E[1;5F,
+ 	ka1=\E[1~,
+-- 
+2.20.1
+

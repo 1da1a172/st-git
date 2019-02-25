@@ -1,0 +1,27 @@
+From 8c461b69ddba5baa7088b197f770e38ab7e78fbf Mon Sep 17 00:00:00 2001
+From: Jonathan Waldrep <waldrep@vt.edu>
+Date: Fri, 22 Feb 2019 14:04:50 -0500
+Subject: [PATCH 6/8] zoom by 2
+
+---
+ config.def.h | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/config.def.h b/config.def.h
+index d33b193..0706677 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -171,8 +171,8 @@ static Shortcut shortcuts[] = {
+ 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
+ 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
+ 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
+-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
+-	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
++	{ TERMMOD,              XK_Prior,       zoom,           {.f = +2} },
++	{ TERMMOD,              XK_Next,        zoom,           {.f = -2} },
+ 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
+ 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
+ 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
+-- 
+2.20.1
+

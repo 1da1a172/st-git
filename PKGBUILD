@@ -15,7 +15,14 @@ depends=('libxft')
 makedepends=('ncurses' 'libxext' 'git')
 epoch=1
 # include config.h and any patches you want to have applied here
-source=('git://git.suckless.org/st')
+source=('git://git.suckless.org/st'
+	'0001-use-anonymous-pro.patch'
+	'0002-smaller-boarder.patch'
+	'0003-actionfps-to-120.patch'
+	'0004-use-modified-ir_black-color-scheme.patch'
+	'0005-zoom-by-2.patch'
+	'0006-change-zoom-shortcuts.patch'
+	'0007-set-tabspaces-to-4.patch')
 sha1sums=('SKIP')
 
 provides=("${_pkgname}")

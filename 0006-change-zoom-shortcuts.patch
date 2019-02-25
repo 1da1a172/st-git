@@ -1,0 +1,29 @@
+From 0de9f0ffb2ca4e86f07e6620e1db39819448a8f1 Mon Sep 17 00:00:00 2001
+From: Jonathan Waldrep <waldrep@vt.edu>
+Date: Fri, 22 Feb 2019 15:07:10 -0500
+Subject: [PATCH 7/8] change zoom shortcuts
+
+---
+ config.def.h | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/config.def.h b/config.def.h
+index 0706677..ae05b77 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -171,9 +171,9 @@ static Shortcut shortcuts[] = {
+ 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
+ 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
+ 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
+-	{ TERMMOD,              XK_Prior,       zoom,           {.f = +2} },
+-	{ TERMMOD,              XK_Next,        zoom,           {.f = -2} },
+-	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
++	{ ControlMask,          XK_equal,       zoom,           {.f = +2} },
++	{ ControlMask,          XK_minus,       zoom,           {.f = -2} },
++	{ ControlMask,          XK_0,           zoomreset,      {.f =  0} },
+ 	{ TERMMOD,              XK_C,           clipcopy,       {.i =  0} },
+ 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
+ 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
+-- 
+2.20.1
+

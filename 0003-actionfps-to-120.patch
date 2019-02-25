@@ -1,0 +1,25 @@
+From 329004fc0f39f4798dd4cc78cc650dcb99198265 Mon Sep 17 00:00:00 2001
+From: Jonathan Waldrep <waldrep@vt.edu>
+Date: Fri, 22 Feb 2019 13:50:25 -0500
+Subject: [PATCH 4/8] actionfps to 120
+
+---
+ config.def.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/config.def.h b/config.def.h
+index ff33d11..c15026f 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -43,7 +43,7 @@ int allowaltscreen = 1;
+ 
+ /* frames per second st should at maximum draw to the screen */
+ static unsigned int xfps = 120;
+-static unsigned int actionfps = 30;
++static unsigned int actionfps = 120;
+ 
+ /*
+  * blinking timeout (set to 0 to disable blinking) for the terminal blinking
+-- 
+2.20.1
+

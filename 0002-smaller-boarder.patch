@@ -1,0 +1,25 @@
+From e337b24d2aa510e489c4363341108742fa154980 Mon Sep 17 00:00:00 2001
+From: Jonathan Waldrep <waldrep@vt.edu>
+Date: Fri, 22 Feb 2019 13:47:20 -0500
+Subject: [PATCH 3/8] smaller boarder
+
+---
+ config.def.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/config.def.h b/config.def.h
+index 6781b82..ff33d11 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -6,7 +6,7 @@
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+ static char *font = "Anonymous Pro:pixelsize=18:antialias=true:autohint=true";
+-static int borderpx = 2;
++static int borderpx = 1;
+ 
+ /*
+  * What program is execed by st depends of these precedence rules:
+-- 
+2.20.1
+

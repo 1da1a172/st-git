@@ -1,0 +1,78 @@
+From 459824a713f793fccd7bf81393d4050910adf5d0 Mon Sep 17 00:00:00 2001
+From: Jonathan Waldrep <waldrep@vt.edu>
+Date: Fri, 22 Feb 2019 14:03:12 -0500
+Subject: [PATCH 5/8] use modified ir_black color scheme
+
+---
+ config.def.h | 41 +++++++++++++++++++++--------------------
+ 1 file changed, 21 insertions(+), 20 deletions(-)
+
+diff --git a/config.def.h b/config.def.h
+index c15026f..d33b193 100644
+--- a/config.def.h
++++ b/config.def.h
+@@ -85,30 +85,31 @@ unsigned int tabspaces = 8;
+ /* Terminal colors (16 first used in escape sequence) */
+ static const char *colorname[] = {
+ 	/* 8 normal colors */
+-	"black",
+-	"red3",
+-	"green3",
+-	"yellow3",
+-	"blue2",
+-	"magenta3",
+-	"cyan3",
+-	"gray90",
++	"#101010", /* black   */
++	"#405050", /* red     */
++	"#60b48a", /* green   */
++	"#dfaf8f", /* yellow  */
++	"#506070", /* blue    */
++	"#dc8cc3", /* magenta */
++	"#8cd0d3", /* cyan    */
++	"#dcdcdc", /* white   */
+ 
+ 	/* 8 bright colors */
+-	"gray50",
+-	"red",
+-	"green",
+-	"yellow",
+-	"#5c5cff",
+-	"magenta",
+-	"cyan",
+-	"white",
++	"#709080", /* grey    */
++	"#dca3a3", /* red     */
++	"#c3bf9f", /* green   */
++	"#f0dfaf", /* yellow  */
++	"#94bff3", /* blue    */
++	"#ec93d3", /* magenta */
++	"#93e0e3", /* cyan    */
++	"#ffffff", /* white   */
+ 
+ 	[255] = 0,
+ 
+ 	/* more colors can be added after 255 to use with DefaultXX */
+-	"#cccccc",
+-	"#555555",
++	"#cccccc", /* 256: cs  */
++	"#303030", /* 257: bg  */
++	"#484848", /* 258: rcs */
+ };
+ 
+ 
+@@ -117,9 +118,9 @@ static const char *colorname[] = {
+  * foreground, background, cursor, reverse cursor
+  */
+ unsigned int defaultfg = 7;
+-unsigned int defaultbg = 0;
++unsigned int defaultbg = 257;
+ static unsigned int defaultcs = 256;
+-static unsigned int defaultrcs = 257;
++static unsigned int defaultrcs = 258;
+ 
+ /*
+  * Default shape of cursor
+-- 
+2.20.1
+
