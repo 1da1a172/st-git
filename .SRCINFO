@@ -33,3 +33,38 @@ pkgbase = st-git
 
 pkgname = st-git
 
+pkgbase = st-git
+	pkgdesc = Simple virtual terminal emulator for X
+	pkgver = 0.8.2.14.g2b8333f
+	pkgrel = 1
+	epoch = 1
+	url = http://st.suckless.org/
+	arch = i686
+	arch = x86_64
+	license = MIT
+	makedepends = ncurses
+	makedepends = libxext
+	makedepends = git
+	depends = libxft
+	provides = st
+	conflicts = st
+	options = zipman
+	source = git://git.suckless.org/st
+	source = 0001-use-anonymous-pro.patch
+	source = 0002-smaller-boarder.patch
+	source = 0003-actionfps-to-120.patch
+	source = 0004-use-modified-ir_black-color-scheme.patch
+	source = 0005-zoom-by-2.patch
+	source = 0006-change-zoom-shortcuts.patch
+	source = 0007-set-tabspaces-to-4.patch
+	sha1sums = SKIP
+	sha1sums = 3969ca419d9fecb2b356905d8522867a0fd8565a
+	sha1sums = 4cfc4bad41e4988aa3da838ecbf9926eac745364
+	sha1sums = ac5eb20239a2b257aaaa045849aa5d7f62632a70
+	sha1sums = 49e13f823bcf201583b44aa3c1319ae59922d54a
+	sha1sums = a6e4efb0386e4deaec3f4d77f167a2d6e90ab45e
+	sha1sums = c5b6b70e41bdd3953a1df3c06a3c541b53419291
+	sha1sums = 55a218d7bd8002c143c8cd176da394a58091841d
+
+pkgname = st-git
+

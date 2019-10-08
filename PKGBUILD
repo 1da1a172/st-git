@@ -4,7 +4,7 @@
 
 pkgname=st-git
 _pkgname=st
-pkgver=0.8.2.12.gf1546cf
+pkgver=0.8.2.14.g2b8333f
 pkgrel=1
 pkgdesc='Simple virtual terminal emulator for X'
 url='http://st.suckless.org/'
@@ -27,7 +27,7 @@ sha1sums=('SKIP'
           '3969ca419d9fecb2b356905d8522867a0fd8565a'
           '4cfc4bad41e4988aa3da838ecbf9926eac745364'
           'ac5eb20239a2b257aaaa045849aa5d7f62632a70'
-          '320a0f991dab91a364ccf29fa38755b3c77ebebd'
+          '49e13f823bcf201583b44aa3c1319ae59922d54a'
           'a6e4efb0386e4deaec3f4d77f167a2d6e90ab45e'
           'c5b6b70e41bdd3953a1df3c06a3c541b53419291'
           '55a218d7bd8002c143c8cd176da394a58091841d')
