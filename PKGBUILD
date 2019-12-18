@@ -4,8 +4,8 @@
 
 pkgname=st-git
 _pkgname=st
-pkgver=0.8.2.14.g2b8333f
-pkgrel=1
+pkgver=0.8.2.25.g3848301
+pkgrel=2
 pkgdesc='Simple virtual terminal emulator for X'
 url='http://st.suckless.org/'
 arch=('i686' 'x86_64')
@@ -23,14 +23,14 @@ source=('git://git.suckless.org/st'
 	'0005-zoom-by-2.patch'
 	'0006-change-zoom-shortcuts.patch'
 	'0007-set-tabspaces-to-4.patch')
-sha1sums=('SKIP'
-          '3969ca419d9fecb2b356905d8522867a0fd8565a'
-          '4cfc4bad41e4988aa3da838ecbf9926eac745364'
-          'ac5eb20239a2b257aaaa045849aa5d7f62632a70'
-          '49e13f823bcf201583b44aa3c1319ae59922d54a'
-          'a6e4efb0386e4deaec3f4d77f167a2d6e90ab45e'
-          'c5b6b70e41bdd3953a1df3c06a3c541b53419291'
-          '55a218d7bd8002c143c8cd176da394a58091841d')
+sha256sums=('SKIP'
+            '2aee25ac14419f927753ad59805c68e30d4e78fe4681b1209b0e284266031aa4'
+            '053fa87aa98eb8ecda5013bcb5d035534a7a3265de74fe62df114f0e9fc829f2'
+            '7a92fe2dac6cce1edfa8f5747cba2f7d21bf764da0edcc528f509397d57a48a5'
+            '5d6acc5ebc604e29ecdacbe2ce2ef2629d709a63b5e4f41a294f2a0e52f2acbc'
+            'e7ca004fc284907b21ee29f2ac69e8361a4bc29327de366a6503d99e34b27daf'
+            '2a19627cfa2c6e7d83653b6b67a4867aac5090662ae4c10573acf20bd97a2e7e'
+            'c8be5f8e8b01cb48babf3ebd77a7f22c63d7ad9fb61c273ab403cac51ca83ac6')
 
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
